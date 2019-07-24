@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed|Darker+Grotesque|Open+Sans&display=swap");
+body {
+  /* font-family: "Darker Grotesque", sans-serif; */
+  font-family: "Open Sans", sans-serif !important;
+  /* font-family: "Barlow Condensed", sans-serif; */
+}
+.text-differemt {
+  font-family: "Darker Grotesque", sans-serif;
+}
+.main-container {
+  margin: 10px;
+}
