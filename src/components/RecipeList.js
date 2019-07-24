@@ -9,8 +9,9 @@ export default class RecipeList extends Component {
     return (
       <div>
         <React.Fragment>
-          <RecipeSearch />
           <div className="main-container">
+            <RecipeSearch />
+
             {/* Title */}
             <div className="row">
               <div className="col-10 mx-auto col-md-6 text-center mb-3">
@@ -18,13 +19,12 @@ export default class RecipeList extends Component {
               </div>
             </div>
             {/* End of title */}
-            <div className="row">
+            <div className="row recipe-container">
               {recipes.map(recipe => {
-                return <Recipe key={recipe.id} recipe={recipe} />;
+                return <Recipe key={recipe.recipe_id} recipe={recipe} />;
               })}
             </div>
           </div>
-          <Recipe />
         </React.Fragment>
       </div>
     );

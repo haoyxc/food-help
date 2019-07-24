@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed|Darker+Grotesque|Open+Sans&display=swap");
+:root {
+  --primary-color: #93b9e5;
+  --triadic1: #e593b9;
+  --analogous: #9693e5;
+}
 body {
   /* font-family: "Darker Grotesque", sans-serif; */
   font-family: "Open Sans", sans-serif !important;
@@ -8,5 +13,44 @@ body {
   font-family: "Darker Grotesque", sans-serif;
 }
 .main-container {
-  margin: 10px;
+  margin: 30px;
+}
+.recipe-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 1rem;
+  width: 90vw;
+  text-align: center;
+}
+.recipe {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.recipe-img {
+  object-fit: cover;
+}
+.recipe-publisher {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: italic;
+  color: var(--primary-color);
+}
+.recipe-btns {
+  margin-top: 20px;
+}
+.recipe-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  max-width: 150px;
+  border-radius: 20px;
+  background: var(--primary-color);
+  color: white;
+  overflow: hidden;
+}
+.recipe-btns {
+  display: flex;
+  justify-content: space-around;
 }
