@@ -1,7 +1,5 @@
 import React from "react";
 import "./App.css";
-// import { createStore } from "redux";
-import { recipes } from "./tempList";
 import RecipeList from "./components/RecipeList";
 import RecipeDetails from "./components/RecipeDetails";
 
@@ -54,7 +52,6 @@ class App extends React.Component {
     this.setState({
       search: e.target.value
     });
-    console.log(e.target.value);
   };
   handleSubmit = e => {
     e.preventDefault();
@@ -68,8 +65,6 @@ class App extends React.Component {
         this.getRecipes();
       }
     );
-
-    let input = e.target.input;
   };
   displayPage = index => {
     switch (index) {
@@ -80,7 +75,6 @@ class App extends React.Component {
             recipes={this.state.recipes}
             handleDetails={this.handleDetails.bind(this)}
             value={this.state.search}
-            //do I have to bind?
             handleChange={this.handleChange.bind(this)}
             handleSubmit={this.handleSubmit.bind(this)}
             error={this.state.error}
@@ -96,7 +90,6 @@ class App extends React.Component {
     }
   };
   render() {
-    // console.log(this.state.recipes);
     return <React.Fragment>{this.displayPage(this.state.pageIndex)}</React.Fragment>;
   }
 }

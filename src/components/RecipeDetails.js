@@ -19,11 +19,11 @@ export default class RecipeDetails extends Component {
       this.setState({
         recipe: jsonData.recipe
       });
-      // console.log(this.state)
     } catch (e) {
       console.log(e);
     }
   }
+  //alternative
   // state = {
   //   recipe: recipe
   // };
