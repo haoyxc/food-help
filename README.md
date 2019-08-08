@@ -1,3 +1,12 @@
+### Food Help
+Search for a recipe across multiple publishers using the Food2Fork API
+
+# Preview: 
+![foodhelp2](https://user-images.githubusercontent.com/48307028/62672478-df8fee80-b968-11e9-8ae5-71691547edfc.JPG)
+![foodhelp3](https://user-images.githubusercontent.com/48307028/62672477-df8fee80-b968-11e9-9f41-1899f57b4540.JPG)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
